@@ -1,0 +1,47 @@
+body {
+    background: #F2F2F2;
+    margin-left: 2.5vw;
+    margin-top: 2.5vh;
+    width: 95vw;
+}
+
+.logoWrapper {
+    float:left;
+    width: 25vw;
+}
+
+.logoImage {
+    width: 20vw;
+    max-width: 10em;
+    min-width: 5em;
+}
+
+.header {
+    color: #436F17;
+    font-size: 3vw;
+    text-align: left;
+}
+
+.commonText {
+    color: #436F17;
+    font-size: 25pt;
+}
+
+.linkText {
+    color: #0070c0;
+    font-size: 18pt;
+}
+
+.page {
+    overflow:auto;
+}
+
+.pageSeparator {
+    width: 100%;
+    margin-top: 15vh;
+}
+
+.imageWithBorder {
+    border-radius: 50%;
+    box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+}

@@ -1,0 +1,36 @@
+.engineerPhotoWrapper {
+    float:right;
+    margin-top: 5vh;
+    margin-right: 8vw;
+    display: block;
+}
+.engineerPhotoImage {
+    width: 30vw;
+}
+
+.logoAboutMe {
+    width: 55vw;
+}
+
+.aboutMeWrapper {
+    margin-top: 30vh;
+    margin-left: 8vw;
+    width: 45vw;
+    text-align: left;
+    color: #3F3F3F;
+}
+
+.certificatesWrapper {
+    margin-top: 6vh;
+    margin-left: 8vw;
+}
+
+.certificateImage {
+    width: 12vw;
+    padding-right: 4vw;
+}
+
+.socialImage {
+    width: 8vw;
+    position: absolute;
+}
