@@ -22,18 +22,13 @@ body {
 .header {
     margin-top: 1vh;
     color: #436F17;
-    font-size: 3vw;
+    font-size: 2.5vw;
     text-align: left;
 }
 
 .commonText {
     color: #436F17;
     font-size: 25pt;
-}
-
-.linkText {
-    color: #0070c0;
-    font-size: 18pt;
 }
 
 .page {
