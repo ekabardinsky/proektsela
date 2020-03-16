@@ -1,0 +1,21 @@
+.homeEvolutionTableWrapper {
+    margin-top: 25vh;
+}
+
+.homeEvolutionTableImage {
+    width: 12vw;
+    height: 20vh;
+    margin-right: 1vw;
+    margin-bottom: 2vh;
+}
+
+.homeEvolutionWrapper {
+    float:right;
+    width: 40vw;
+}
+
+.homeEvolutionImage {
+    position: absolute;
+    width: 20vw;
+    height: 36vh;
+}
