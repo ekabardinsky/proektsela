@@ -31,6 +31,17 @@
 }
 
 .socialImage {
-    width: 8vw;
-    position: absolute;
+    width: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.socialImageShifted {
+    margin-top: -20vh;
+}
+
+.socialImagesWrapper {
+    width: 30vw;
 }

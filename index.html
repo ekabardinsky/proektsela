@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/page4.css">
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script src="js/socialMedia.js"></script>
 </head>
 <div class="page">
     <div class="logoWrapper">
@@ -47,11 +48,19 @@
     </div>
     <div class="engineerPhotoWrapper">
         <img class="engineerPhotoImage imageWithBorder" src="images/engineer.jpg">
-        <br>
-        <img class="socialImage" src="images/facebook.png" style="margin-top: -12vh">
-        <img class="socialImage" src="images/vimeo.png" style="margin-top: -2vh; margin-left: 7vw">
-        <img class="socialImage" src="images/instagram.png" style="margin-top: -3.5vh; margin-left: 15vw">
-        <img class="socialImage" src="images/youtube.png" style="margin-top: -12vh; margin-left: 22vw">
+        <table class="socialImagesWrapper">
+            <tr>
+                <td>
+                    <img class="socialImage socialImageShifted" onclick="openLink('https://vk.com/vakabardinskiy')" src="images/vk.png">
+                </td>
+                <td>
+                    <img class="socialImage" onclick="openLink('http://www.youtube.com/channel/UCRJfFY8js9lwt-I26_TWngQ')" src="images/youtube.png">
+                </td>
+                <td>
+                    <img class="socialImage socialImageShifted" onclick="openLink('https://www.instagram.com/vakabardinskiy/')" src="images/instagram.png">
+                </td>
+            </tr>
+        </table>
     </div>
     <div class="commonText aboutMeWrapper">
         Здравствуйте меня зовут Василий Кабардинский, мне 37лет.<br><br>
