@@ -7,9 +7,11 @@
     <link rel="stylesheet" type="text/css" href="css/page2.css">
     <link rel="stylesheet" type="text/css" href="css/page3.css">
     <link rel="stylesheet" type="text/css" href="css/page4.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <script src="js/utils.js"></script>
+    <script src="js/modal.js"></script>
 </head>
 <div class="page">
     <div class="logoWrapper">
@@ -70,9 +72,9 @@
         мне организовать удобство, практичность и эффективность будущего жилого пространства.
     </div>
     <div class="certificatesWrapper">
-        <img class="certificateImage" src="images/min/certificate-1.png">
-        <img class="certificateImage" src="images/min/certificate-2.jpg">
-        <img class="certificateImage" src="images/min/certificate-3.jpg">
+        <img class="certificateImage zoomable-image" src="images/min/certificate-1.png" onclick="openModal('images/certificate-1.png')">
+        <img class="certificateImage zoomable-image" src="images/min/certificate-2.jpg" onclick="openModal('images/certificate-2.jpg')">
+        <img class="certificateImage zoomable-image" src="images/min/certificate-3.jpg" onclick="openModal('images/certificate-3.jpg')">
     </div>
 </div>
 <div class="pageSeparator"/>
@@ -93,35 +95,35 @@
         <table>
             <tr>
                 <td>
-                    <img class="homeEvolutionTableImage" src="images/min/page-2-table-1-1.jpg">
+                    <img class="homeEvolutionTableImage zoomable-image" src="images/min/page-2-table-1-1.jpg" onclick="openModal('images/min/page-2-table-1-1.jpg')">
                 </td>
                 <td>
-                    <img class="homeEvolutionTableImage" src="images/min/page-2-table-1-2.jpg">
+                    <img class="homeEvolutionTableImage zoomable-image" src="images/min/page-2-table-1-2.jpg" onclick="openModal('images/min/page-2-table-1-2.jpg')">
                 </td>
                 <td>
-                    <img class="homeEvolutionTableImage" src="images/min/page-2-table-1-3.jpg">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img class="homeEvolutionTableImage" src="images/min/page-2-table-2-1.png">
-                </td>
-                <td>
-                    <img class="homeEvolutionTableImage" src="images/min/page-2-table-2-2.jpg">
-                </td>
-                <td>
-                    <img class="homeEvolutionTableImage" src="images/min/page-2-table-2-3.jpg">
+                    <img class="homeEvolutionTableImage zoomable-image" src="images/min/page-2-table-1-3.jpg" onclick="openModal('images/min/page-2-table-1-3.jpg')">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img class="homeEvolutionTableImage" src="images/min/page-2-table-3-1.png">
+                    <img class="homeEvolutionTableImage zoomable-image" src="images/min/page-2-table-2-1.png" onclick="openModal('images/min/page-2-table-2-1.png')">
                 </td>
                 <td>
-                    <img class="homeEvolutionTableImage" src="images/min/page-2-table-3-2.jpg">
+                    <img class="homeEvolutionTableImage zoomable-image" src="images/min/page-2-table-2-2.jpg" onclick="openModal('images/min/page-2-table-2-2.jpg')">
                 </td>
                 <td>
-                    <img class="homeEvolutionTableImage" src="images/min/page-2-table-3-3.jpg">
+                    <img class="homeEvolutionTableImage zoomable-image" src="images/min/page-2-table-2-3.jpg" onclick="openModal('images/min/page-2-table-2-3.jpg')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img class="homeEvolutionTableImage zoomable-image" src="images/min/page-2-table-3-1.png" onclick="openModal('images/min/page-2-table-3-1.png')">
+                </td>
+                <td>
+                    <img class="homeEvolutionTableImage zoomable-image" src="images/min/page-2-table-3-2.jpg" onclick="openModal('images/min/page-2-table-3-2.jpg')">
+                </td>
+                <td>
+                    <img class="homeEvolutionTableImage zoomable-image" src="images/min/page-2-table-3-3.jpg" onclick="openModal('images/min/page-2-table-3-3.jpg')">
                 </td>
             </tr>
         </table>
@@ -200,5 +202,16 @@
         </tr>
     </table>
 </div>
+
+<!-- The Modal -->
+<div id="modalImageContainer" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="modal-content-image">
+</div>
+
 </body>
 </html>
