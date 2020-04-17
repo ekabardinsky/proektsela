@@ -15,10 +15,6 @@ body {
     min-width: 5em;
 }
 
-.logoImageFull {
-    height: 12vh;
-}
-
 .header {
     margin-top: 1vh;
     color: #436F17;
@@ -28,7 +24,7 @@ body {
 
 .commonText {
     color: #436F17;
-    font-size: 25pt;
+    font-size: 3vh;
 }
 
 .page {

@@ -1,6 +1,6 @@
 .priceImage {
     width: 16vw;
-    height: 30vh;
+    height: 16vw;
 }
 
 .priceImageWrapper {
@@ -11,19 +11,19 @@
 .priceHeader {
     margin-top: 1vh;
     color: #436F17;
-    font-size: 2vw;
+    font-size: 3vh;
     text-align: center;
     width: 16vw;
 }
 
 .priceContactsWrapper {
-    width: 25vw;
+    width: 30vw;
     margin-top: 10vh;
 }
 
 .priceLinkText {
     color: #0070c0;
-    font-size: 1vw;
+    font-size: 2vh;
     text-align: center;
     width: 16vw;
     cursor: pointer;
