@@ -20,6 +20,7 @@ body {
     color: #436F17;
     font-size: 2.5vw;
     text-align: left;
+    margin-left: 15px;
 }
 
 .commonText {
@@ -39,4 +40,51 @@ body {
 .imageWithBorder {
     border-radius: 50%;
     box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+}
+
+
+@media (orientation: portrait) {
+    body {
+        background: #F2F2F2;
+        margin-left: 2.5vw;
+        margin-top: 2.5vh;
+        width: 95vw;
+    }
+
+    .logoWrapper {
+        width: 100%;
+        float:left;
+    }
+
+    .logoImage {
+        width: 10vh;
+        max-width: 10em;
+        min-width: 5em;
+    }
+
+    .header {
+        margin-top: 1vh;
+        color: #436F17;
+        font-size: 3vh;
+        text-align: left;
+    }
+
+    .commonText {
+        color: #436F17;
+        font-size: 2vh;
+    }
+
+    .page {
+        overflow:auto;
+    }
+
+    .pageSeparator {
+        width: 100%;
+        margin-top: 10vh;
+    }
+
+    .imageWithBorder {
+        border-radius: 50%;
+        box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+    }
 }

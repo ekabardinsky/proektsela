@@ -34,11 +34,58 @@
 
 .contactRowImage {
     float: left;
-    width: 30pt;
+    width: 3vh;
 }
 
 .contactRowPoint {
     float: left;
     text-align: center;
-    width: 50pt;
+    width: 30pt;
+}
+
+@media (orientation: portrait) {
+    .logoImageFirstPage {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .headerFirstPage {
+        text-align: center;
+    }
+
+    .logoFooter {
+        background: #436F17;
+        width: 100%;
+        font-size: 2vh;
+        text-align: center;
+        color: #F2F2F2;
+        margin-top: 5pt;
+        font-min-size: 18pt;
+    }
+
+    .houseWrapper {
+        float:right;
+        margin-top: 5vh;
+        margin-right: 2vw;
+    }
+
+    .houseImage {
+        width: 91vw;
+    }
+
+    .contactsWrapper {
+        margin-top: 70vh;
+    }
+
+    .contactRowImage {
+        float: left;
+        width: 3vh;
+    }
+
+    .contactRowPoint {
+        float: left;
+        text-align: center;
+        width: 30pt;
+    }
 }

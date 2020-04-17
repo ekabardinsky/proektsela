@@ -27,7 +27,7 @@
 
 .certificateImage {
     width: 12vw;
-    padding-right: 4vw;
+    padding-right: 2vw;
 }
 
 .socialImage {
@@ -44,4 +44,56 @@
 
 .socialImagesWrapper {
     width: 30vw;
+}
+
+@media (orientation: portrait) {
+    .engineerPhotoWrapper {
+        float:right;
+        margin-top: -5vh;
+        margin-right: 8vw;
+        display: block;
+        width: 33vw;
+    }
+    .engineerPhotoImage {
+        width: 30vw;
+        display: none;
+    }
+
+    .logoAboutMe {
+        width: 55vw;
+    }
+
+    .aboutMeWrapper {
+        margin-top: 15vh;
+        margin-left: 8vw;
+        width: 80vw;
+        text-align: left;
+        color: #3F3F3F;
+    }
+
+    .certificatesWrapper {
+        margin-top: 6vh;
+        margin-left: 8vw;
+    }
+
+    .certificateImage {
+        width: 25vw;
+        padding-right: 1vw;
+    }
+
+    .socialImage {
+        width: 10vw;
+        margin-left: 0vw;
+        margin-right: 0vw;
+        display: block;
+        cursor: pointer;
+    }
+
+    .socialImageShifted {
+        margin-top: 0vh;
+    }
+
+    .socialImagesWrapper {
+        width: 30vw;
+    }
 }

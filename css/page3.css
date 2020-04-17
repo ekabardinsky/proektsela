@@ -1,5 +1,5 @@
 .homeEvolutionTableWrapper {
-    margin-top: 25vh;
+    margin-top: 30vh;
 }
 
 .homeEvolutionTableImage {
@@ -12,10 +12,36 @@
 .homeEvolutionWrapper {
     float:right;
     width: 40vw;
+    margin-top: 9vh;
 }
 
 .homeEvolutionImage {
     position: absolute;
     width: 20vw;
     height: 20vw;
+}
+
+@media (orientation: portrait) {
+    .homeEvolutionTableWrapper {
+        margin-top: 15vh;
+    }
+
+    .homeEvolutionTableImage {
+        width: 30vw;
+        height: 30vw;
+        margin-right: 1vw;
+        margin-bottom: 2vh;
+    }
+
+    .homeEvolutionWrapper {
+        float:right;
+        width: 40vw;
+        display: none;
+    }
+
+    .homeEvolutionImage {
+        position: absolute;
+        width: 20vw;
+        height: 20vw;
+    }
 }

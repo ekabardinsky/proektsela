@@ -28,3 +28,90 @@
     width: 16vw;
     cursor: pointer;
 }
+
+.logo1Wrapper {
+    margin-top: -8vh;
+}
+
+.logo2Wrapper {
+    margin-top: -8vh;
+}
+
+.logo3Wrapper {
+    margin-top: -35vh;
+}
+
+.logo4Wrapper {
+
+}
+
+.logo5Wrapper {
+    margin-top: -35vh;
+}
+
+@media (orientation: portrait) {
+    .priceImage {
+        width: 22vw;
+        height: 22vw;
+    }
+
+    .priceImageWrapper {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    .priceHeader {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        color: #436F17;
+        font-size: 3.5vw;
+        text-align: center;
+        width: 22vw;
+    }
+
+    .priceContactsWrapper {
+        position: absolute;
+        width: 70vw;
+        margin-top: 52vh;
+        margin-left: -70vw;
+        margin-bottom: 3vh;
+    }
+
+    .priceLinkText {
+        color: #0070c0;
+        font-size: 3.5vw;
+        text-align: center;
+        width: 22vw;
+        cursor: pointer;
+    }
+
+    .logo1Wrapper {
+        position: absolute;
+        margin-left: 12vw;
+        margin-top: 0vh;
+    }
+
+    .logo2Wrapper {
+        position: absolute;
+        margin-left: 0vw;
+        margin-top: 0vh;
+    }
+
+    .logo3Wrapper {
+        position: absolute;
+        margin-left: 0vw;
+        margin-top: 0vh;
+    }
+
+    .logo4Wrapper {
+        position: absolute;
+        margin-left: -6vw;
+        margin-top: 25vh;
+    }
+
+    .logo5Wrapper {
+        position: absolute;
+        margin-left: 6vw;
+        margin-top: 25vh;
+    }
+}
