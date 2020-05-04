@@ -21,9 +21,27 @@
     height: 33vh;
 }
 
+.homeEvolutionStep1 {
+    margin-left: -10vh;
+}
+
+.homeEvolutionStep2 {
+    margin-top: 22.5vh;
+    margin-left: 20vh;
+}
+
+.homeEvolutionStep3 {
+    margin-top: 58vh;
+    margin-left: 20vh;
+}
+
+.homeEvolutionStepArrow {
+    margin-top: 33vh;
+}
+
 @media (orientation: portrait) {
     .homeEvolutionTableWrapper {
-        margin-top: 15vh;
+        margin-top: 53vh;
     }
 
     .homeEvolutionTableImage {
@@ -34,14 +52,33 @@
     }
 
     .homeEvolutionWrapper {
-        float:right;
-        width: 40vw;
-        display: none;
+        width: 90vw;
+        margin-top: 5vh;
     }
 
     .homeEvolutionImage {
         position: absolute;
-        width: 20vw;
-        height: 20vw;
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .homeEvolutionStep1 {
+        margin-left: 0vw;
+    }
+
+    .homeEvolutionStep2 {
+        margin-top: 3vw;
+        margin-left: 33vw;
+    }
+
+    .homeEvolutionStep3 {
+        margin-top: 30vw;
+        margin-left: 53vw;
+    }
+
+    .homeEvolutionStepArrow {
+        transform: rotate(-40deg);
+        margin-top: 23vw;
+        margin-left: 23vw;
     }
 }
