@@ -17,8 +17,8 @@
 
 .homeEvolutionImage {
     position: absolute;
-    width: 20vw;
-    height: 20vw;
+    width: 33vh;
+    height: 33vh;
 }
 
 @media (orientation: portrait) {
