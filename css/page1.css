@@ -14,6 +14,7 @@
     background: #436F17;
     width: 100%;
     font-size: 1.2vw;
+    font-family: Verdana,Geneva,sans-serif;
     text-align: center;
     color: #F2F2F2;
     margin-top: 5pt;
@@ -62,6 +63,7 @@
         background: #436F17;
         width: 100%;
         font-size: 2vh;
+        font-family: Verdana,Geneva,sans-serif;
         text-align: center;
         color: #F2F2F2;
         margin-top: 5pt;

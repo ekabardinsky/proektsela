@@ -12,6 +12,7 @@
     margin-top: 1vh;
     color: #3B8643;
     font-size: 3vh;
+    font-family: Verdana,Geneva,sans-serif;
     text-align: center;
     width: 16vw;
 }
@@ -24,6 +25,7 @@
 .priceLinkText {
     color: #0070c0;
     font-size: 2vh;
+    font-family: Verdana,Geneva,sans-serif;
     text-align: center;
     width: 16vw;
     cursor: pointer;
@@ -65,6 +67,7 @@
         margin-bottom: 1vh;
         color: #3B8643;
         font-size: 3.5vw;
+        font-family: Verdana,Geneva,sans-serif;
         text-align: center;
         width: 30vw;
     }
@@ -80,6 +83,7 @@
     .priceLinkText {
         color: #0070c0;
         font-size: 3.5vw;
+        font-family: Verdana,Geneva,sans-serif;
         text-align: center;
         width: 30vw;
         cursor: pointer;
