@@ -21,7 +21,8 @@ body {
     font-size: 2.5vw;
     font-family: Verdana,Geneva,sans-serif;
     text-align: left;
-    margin-left: 15px;
+    margin-left: 7px;
+    font-weight: bold;
 }
 
 .commonText {
@@ -70,6 +71,7 @@ body {
         font-size: 3vh;
         font-family: Verdana,Geneva,sans-serif;
         text-align: left;
+        font-weight: bold;
     }
 
     .commonText {
