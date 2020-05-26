@@ -9,7 +9,21 @@ function openModal(imagePath, caption){
     modalImg.src = imagePath;
 
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    var span = document.getElementById("closeImage");
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+}
+
+function openCalc(){
+    // Get the modal
+    var modal = document.getElementById("modalCalcContainer");
+    modal.style.display = "block";
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementById("closeCalc");
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {

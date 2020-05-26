@@ -13,6 +13,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <script src="js/utils.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/calc.js"></script>
 </head>
 <div class="page">
     <div class="logoWrapper">
@@ -198,8 +199,8 @@
             <td>
                 <div class="logo2Wrapper">
                     <div class="priceHeader">Сколько стоит проект дома</div>
-                    <img class="priceImage imageWithBorder clickableImage" src="images/min/price-calc.png">
-                    <div class="priceLinkText">Примерный расчет по ссылке</div>
+                    <img class="priceImage imageWithBorder clickableImage" src="images/min/price-calc.png" onclick="openCalc()">
+                    <div class="priceLinkText" onclick="openCalc()">Примерный расчет</div>
                 </div>
             </td>
         </tr>
@@ -256,114 +257,123 @@
     </table>
 </div>
 <div class="pageSeparator"/>
-<div class="calcPage">
-    <div class="calcHeader header">Примерная стоимость</div>
-    <div class="calcOptions">
-        <div class="calcOptionsHeader header">Состав проекта:</div>
-        <table>
-            <tr>
-                <td class="commonText calcOptionsOptionName">
-                    1. Эскизный проект.
-                </td>
-                <td>
-                    <div class="calcOptionsOptionChecker"/>
-                </td>
-            </tr>
-            <tr>
-                <td class="commonText calcOptionsOptionName">
-                    2. Архитектурные решения.
-                </td>
-                <td>
-                    <div class="calcOptionsOptionChecker"/>
-                </td>
-            </tr>
-            <tr>
-                <td class="commonText calcOptionsOptionName">
-                    3. Конструктивные решения.
-                </td>
-                <td>
-                    <div class="calcOptionsOptionChecker"/>
-                </td>
-            </tr>
-            <tr>
-                <td class="commonText calcOptionsOptionName">
-                    4. Электроснабжение.
-                </td>
-                <td>
-                    <div class="calcOptionsOptionChecker"/>
-                </td>
-            </tr>
-            <tr>
-                <td class="commonText calcOptionsOptionName">
-                    5. Водоснабжение и канализация.
-                </td>
-                <td>
-                    <div class="calcOptionsOptionChecker"/>
-                </td>
-            </tr>
-            <tr>
-                <td class="commonText calcOptionsOptionName">
-                    6. Отопление и вентиляция.
-                </td>
-                <td>
-                    <div class="calcOptionsOptionChecker"/>
-                </td>
-            </tr>
-            <tr>
-                <td class="calcOptionsEmptyRow">
-                </td>
-            </tr>
-            <tr>
-                <td class="commonText calcOptionsOptionName">
-                    Планируемая площадь.
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="calcOptionsInputBox">
-                        <input class="calcOptionsInput" type="number" min="0" value="100"/> м²
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="commonText calcOptionsOptionName">
-                    Примерная стоимость.
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table>
-                        <tr>
-                            <td class="commonText calcOptionsOptionName">
-                                от
-                            </td>
-                            <td>
-                                <div class="calcOptionsInputBox">
-                                    10000 ₽
-                                </div>
-                            </td>
-                            <td class="commonText calcOptionsOptionName">
-                                до
-                            </td>
-                            <td>
-                                <div class="calcOptionsInputBox">
-                                    20000 ₽
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
+
+<div id="modalCalcContainer" class="modal">
+
+    <!-- The Close Button -->
+    <span id="closeCalc" class="close">&times;</span>
+
+    <!-- Modal Content -->
+    <div class="calcPage">
+        <div class="calcHeader header">Примерная стоимость</div>
+        <div class="calcOptions">
+            <div class="calcOptionsHeader header">Состав проекта:</div>
+            <table>
+                <tr>
+                    <td class="commonText calcOptionsOptionName">
+                        1. Эскизный проект.
+                    </td>
+                    <td>
+                        <div class="calcOptionsOptionChecker" id="exlusive" onclick="changeState(this)"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="commonText calcOptionsOptionName">
+                        2. Архитектурные решения.
+                    </td>
+                    <td>
+                        <div class="calcOptionsOptionChecker" id="architecture" onclick="changeState(this)"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="commonText calcOptionsOptionName">
+                        3. Конструктивные решения.
+                    </td>
+                    <td>
+                        <div class="calcOptionsOptionChecker" id="constructive" onclick="changeState(this)"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="commonText calcOptionsOptionName">
+                        4. Электроснабжение.
+                    </td>
+                    <td>
+                        <div class="calcOptionsOptionChecker" id="electro" onclick="changeState(this)"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="commonText calcOptionsOptionName">
+                        5. Водоснабжение и канализация.
+                    </td>
+                    <td>
+                        <div class="calcOptionsOptionChecker" id="water" onclick="changeState(this)"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="commonText calcOptionsOptionName">
+                        6. Отопление и вентиляция.
+                    </td>
+                    <td>
+                        <div class="calcOptionsOptionChecker" id="heating" onclick="changeState(this)"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="calcOptionsEmptyRow">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="commonText calcOptionsOptionName">
+                        Планируемая площадь.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="calcOptionsInputBox">
+                            <input class="calcOptionsInput" type="number" min="0" value="100" id="area"
+                                   onchange="calcCosts()"/> м²
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="commonText calcOptionsOptionName">
+                        Примерная стоимость.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td class="commonText calcOptionsOptionName">
+                                    от
+                                </td>
+                                <td>
+                                    <div class="calcOptionsInputBox" id="sumBottom">
+                                        0 ₽
+                                    </div>
+                                </td>
+                                <td class="commonText calcOptionsOptionName">
+                                    до
+                                </td>
+                                <td>
+                                    <div class="calcOptionsInputBox" id="sumTop">
+                                        0 ₽
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <img class="calcCells" src="images/calc/cells.png">
     </div>
-    <img class="calcCells" src="images/calc/cells.png">
 </div>
 
 <!-- The Modal -->
 <div id="modalImageContainer" class="modal">
 
     <!-- The Close Button -->
-    <span class="close">&times;</span>
+    <span id="closeImage" class="close">&times;</span>
 
     <!-- Modal Content (The Image) -->
     <img class="modal-content" id="modal-content-image">
