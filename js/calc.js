@@ -88,6 +88,17 @@ function calcCosts() {
         if (currentValue) {
             sumBottom += window.calcState[option].price.bottom * area * priceMultiplier;
             sumTop += window.calcState[option].price.top * area * priceMultiplier;
+
+            // for each includes
+            window.calcState[option].includes.forEach(key => {
+                var priceMultiplier = isPriceOff && window.calcState[key].price.supportPriceOff ? 1 - priceOffValue : 1;
+
+                var currentValue = window.calcState[key].state;
+                if (!currentValue) {
+                    sumBottom += window.calcState[key].price.bottom * area * priceMultiplier;
+                    sumTop += window.calcState[key].price.top * area * priceMultiplier;
+                }
+            });
         }
     });
 
