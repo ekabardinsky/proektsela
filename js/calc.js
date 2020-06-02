@@ -103,6 +103,6 @@ function calcCosts() {
     });
 
     // update values
-    document.getElementById("sumBottom").innerText = Math.round(sumBottom) + " ₽";
-    document.getElementById("sumTop").innerText = Math.round(sumTop) + " ₽";
+    document.getElementById("sumBottom").innerText = Math.round(sumBottom) + " Р";
+    document.getElementById("sumTop").innerText = Math.round(sumTop) + " Р";
 }
